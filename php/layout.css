@@ -7,12 +7,21 @@ body{
 	background: #00507c;
 }
 #content{
-	width:66%;
 	margin: 0 auto;
 	text-align:center;
 }
+@media screen and (orientation: landscape){
+	#content {
+		width:66%;
+	}
+}
+@media screen and (orientation: portrait){
+	#content {
+		width:100%;
+	}
+}
 img{
-	width:66%;
+	width:100%;
 	border-style:none;
 }
 a, a:hover, a:active, a:visited {
