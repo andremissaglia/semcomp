@@ -7,30 +7,32 @@
 <link rel="stylesheet" href="stylesheets/app.css">
 </head>
 <body>
-
-  <nav data-magellan-expedition="fixed">
+  <header class="sticky-top-bar">
     <div class="row">
-      <div id="logo-semcomp" class="small-3 columns">
-      Logo da semcomp aqui!
+      <div class="large-3 columns semcomp-logo">
+        <img src="http://placehold.it/200x80">
       </div>
-      <div class="small-9 columns"></div>
-    </div>    
-    <div class="row">
-      <div class="small-0 large-3 columns"></div>
-      <div class="small-12 large-9 columns">
-        <dl class="sub-nav">
-          <dd data-magellan-arrival="evento"><a href="#evento">O evento</a></dd>
-          <dd data-magellan-arrival="palestras-minicursos"><a href="#palestras-minicursos">Palestras &amp; Minicursos</a></dd>
-          <dd data-magellan-arrival="competicoes"><a href="#competicoes">Competições</a></dd>
-          <dd data-magellan-arrival="feira-recrutamento"><a href="#feira-recrutamento">Feira de Recrutamento</a></dd>
-          <dd data-magellan-arrival="WICT"><a href="#WICT">WICT</a></dd>
-          <dd data-magellan-arrival="patrocinio"><a href="#patrocinio">Patrocinio</a></dd>
-          <dd data-magellan-arrival="apoio"><a href="#apoio">Apoio</a></dd>
-        </dl>
-      <div class="small-9 columns"></div>
+      <div class="large-9 columns links">
+        <div class="row">
+          <div class="large-4 large-push-8 columns">
+            <img src="http://placehold.it/50x50&text=F">
+            <img src="http://placehold.it/50x50&text=G">
+            <img src="http://placehold.it/50x50&text=T">
+          </div>
+        </div>
+        <ul class="sub-nav">
+          <li><a href="#evento">O evento</a></li>
+          <li><a href="#palestras-minicursos">Palestras &amp; Minicursos</a></li>
+          <li><a href="#competicoes">Competições</a></li>
+          <li><a href="#feira-recrutamento">Feira de Recrutamento</a></li>
+          <li><a href="#wict">WICT</a></li>
+          <li><a href="#patrocinio">Patrocinio</a></li>
+          <li><a href="#apoio">Apoio</a></li>
+        </ul>
+      </div>
     </div>
-  </nav>
-  <header>
+  </header>
+  <header class="full-width-background">
     <div id="header" class="row">                        
         <div class="large-3 large-push-9 columns">
           <div id="semcomp-logo2"></div>
@@ -44,39 +46,42 @@
   </header>
   <section id="all" class="row">
     <article>
-      <h2 id="evento" data-magellan-destination="evento"> O evento</h1>
+      <a id="evento"><h2>O evento</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="palestras-minicursos" data-magellan-destination="palestras-minicursos">Palestras &amp; Minicursos</h1>
+      <a id="palestras-minicursos"><h2>Palestras &amp; Minicursos</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="competicoes" data-magellan-destination="competicoes">Competições</h1>
+      <a id="competicoes"><h2>Competições</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="feira-recrutamento"data-magellan-destination="feira-recrutamento">Feira de Recrutamento</h1>
+      <a id="feira-recrutamento"><h2>Feira de Recrutamento</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="WICT"data-magellan-destination="WICT">WICT</h1>
+      <a id="wict"><h2>WICT</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="patrocinio"data-magellan-destination="patrocinio">Patrocinio</h1>
+      <a id="patrocinio"><h2>Patrocinio</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>
     <article>
-      <h2 id="apoio"data-magellan-destination="apoio"> Apoio</h1>
+      <a id="apoio"><h2>Apoio</h2></a>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor vehicula tellus non cursus. Cras eget dolor sodales, molestie mauris quis, aliquam dui. Fusce sit amet lobortis dolor. Morbi pretium turpis vitae aliquet bibendum. Nunc eget nunc fringilla, volutpat lectus quis, sodales sem. Integer nisl enim, varius quis magna nec, fringilla posuere tellus. Nullam sem sapien, rhoncus at varius et, varius non erat. Duis suscipit lacinia lorem, nec commodo magna eleifend a. Nulla vel nunc ultricies eros dignissim dapibus. </p>
     </article>    
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
-    <script src="bower_components/foundation/js/foundation.magellan.js"></script>
 
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        magellan: {
+          threshold: 100
+        }
+      });
     </script>
   </section>
 </body>
