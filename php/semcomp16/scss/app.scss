@@ -1,5 +1,11 @@
 @import "settings";
 @import "foundation";
+
+$semcomp-color: #004F78;
+
+$page-background-color: #eee;
+$header-text-color: $semcomp-color;
+
 #logo-semcomp{
 	height:80px;
 	border:1px solid black;	
@@ -10,10 +16,10 @@
 }
 h2 {
 	margin:0.7em 0;
-	border-bottom: 1px solid #004F78;
-	color:#004F78;
+	border-bottom: 1px solid $semcomp-color;
+	color: $semcomp-color;
 }
-header{
+.full-width-background {
 	background: url('../images/faixaFundo.jpeg') repeat;	
 }
 #semcomp-logo2{
@@ -40,4 +46,58 @@ header{
 	#header-text h1{
 		text-align:left;
 	}	
+}
+
+$sticky-bar-height: 82px;
+$sticky-bar-border-size: 2px;
+.sticky-top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $sticky-bar-height;
+
+  z-index: 50;
+
+  border-bottom: $sticky-bar-border-size solid $semcomp-color;
+  background-color: $page-background-color;
+
+  box-shadow: 0 0 30px black;
+
+  > .row {
+
+    > div {
+      height: $sticky-bar-height - $sticky-bar-border-size;
+    }
+  }
+
+  + header {
+     margin-top: $sticky-bar-height;
+  }
+}
+
+a[id] h2 {
+  //truque pra fazer o link interno ficar na posicao certa
+  padding-top: $sticky-bar-height;
+  margin-top: -$sticky-bar-height;
+
+  color: $semcomp-color;
+  border-bottom: 1px solid $semcomp-color;
+}
+
+.links {
+  position: relative;
+
+  .sub-nav {
+    //pra grudar a lista de links na parte de baixo do cabecalho
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
 }
