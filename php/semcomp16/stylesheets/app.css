@@ -7717,19 +7717,18 @@ th.hide-for-touch {
 }
 
 /* line 11, ../scss/app.scss */
-h1 {
+h2 {
   margin: 0.7em 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #004F78;
+  color: #004F78;
 }
 
-/* line 15, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
 header {
   background: url("../images/faixaFundo.jpeg") repeat;
-  color: #FFF;
-  font-size: 2.3em;
 }
 
-/* line 20, ../scss/app.scss */
+/* line 19, ../scss/app.scss */
 #semcomp-logo2 {
   background: url("../images/logo2.png");
   width: 157px;
@@ -7737,12 +7736,12 @@ header {
   margin: 0 auto;
 }
 
-/* line 26, ../scss/app.scss */
+/* line 25, ../scss/app.scss */
 #header {
   padding: 20px 10px;
 }
 
-/* line 29, ../scss/app.scss */
-#header-text {
-  padding: 1em 0.2em;
+/* line 28, ../scss/app.scss */
+#header-text h1 {
+  color: white;
 }
