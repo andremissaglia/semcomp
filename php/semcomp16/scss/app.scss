@@ -25,6 +25,19 @@ header{
 #header{
 	padding: 20px 10px;	
 }
-#header-text h1{	
+#header-text h1{
 	color: white;
+	font-size: 2.3rem;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+#header-text h1 strong{
+	font-size: 2.75rem;
+}
+
+@media #{$large-up} { 
+	#header-text h1{
+		text-align:left;
+	}	
 }

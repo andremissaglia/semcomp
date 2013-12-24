@@ -7744,4 +7744,20 @@ header {
 /* line 28, ../scss/app.scss */
 #header-text h1 {
   color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 35, ../scss/app.scss */
+#header-text h1 strong {
+  font-size: 2.75rem;
+}
+
+@media only screen and (min-width: 64.063em) {
+  /* line 40, ../scss/app.scss */
+  #header-text h1 {
+    text-align: left;
+  }
 }
