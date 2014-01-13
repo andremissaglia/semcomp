@@ -1,33 +1,8 @@
-*{
-	margin:0;
-	padding:0;
-	border:0;
-}
 body{
 	background: #00507c;
 }
-#content{
-	margin: 0 auto;
-	text-align:center;
-}
-@media screen and (orientation: landscape){
-	#content {
-		width:66%;
-	}
-}
-@media screen and (orientation: portrait){
-	#content {
-		width:100%;
-	}
-}
-img{
-	width:83%;
-	border-style:none;
-}
-a, a:hover, a:active, a:visited {
-	text-decoration:none;
-	color:white;
-	font-family: Calibri;
-	font-weight:bold;
-}
 
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: white;
+}
