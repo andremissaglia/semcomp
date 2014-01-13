@@ -101,3 +101,14 @@ a[id] h2 {
     }
   }
 }
+
+.semcomp-logo {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: $sticky-bar-height - $sticky-bar-border-size;
+  }
+}
