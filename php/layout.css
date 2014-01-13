@@ -6,3 +6,50 @@ a, a:hover, a:active, a:visited {
 	text-decoration: none;
 	color: white;
 }
+
+li {
+	text-align: center;
+}
+
+.social-icons {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.social-icons li {
+	list-style: none;
+}
+
+.social-icons img {
+	width: 50px;
+	height: 50px;
+}
+
+/* http://foundation.zurb.com/docs/media-queries.html */
+@media only screen and (max-width: 40em) {
+	.social-icons {
+		position: static;
+		text-align: center;
+	}
+
+	.social-icons li {
+		display: inline;
+	}
+
+	/* http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+	html, body {
+		height: 100%;
+	}
+
+	.main-wrapper {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -50px;
+	}
+
+	.social-icons, .wrapper-push {
+		height: 50px;
+	}
+}
