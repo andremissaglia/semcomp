@@ -7807,6 +7807,19 @@ a[id] h2 {
 }
 
 /* line 105, ../scss/app.scss */
+.semcomp-logo {
+  position: relative;
+}
+/* line 107, ../scss/app.scss */
+.semcomp-logo > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 80px;
+}
+
+/* line 116, ../scss/app.scss */
 .social-links > a > img {
   width: 50px;
   height: 50px;
