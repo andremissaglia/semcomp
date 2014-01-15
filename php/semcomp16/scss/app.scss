@@ -51,28 +51,32 @@ h2 {
 $sticky-bar-height: 82px;
 $sticky-bar-border-size: 2px;
 .sticky-top-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: $sticky-bar-height;
+  @media #{$large-up} { 
+    position: fixed;
+    top: 0;
+    width: 100%;    
 
-  z-index: 50;
+    z-index: 50;
+    > .row {
 
+      > div {
+        height: $sticky-bar-height - $sticky-bar-border-size;
+      }
+    }
+
+    + header {
+       margin-top: $sticky-bar-height;
+    }
+    height: $sticky-bar-height;
+  }
+  
+  
   border-bottom: $sticky-bar-border-size solid $semcomp-color;
   background-color: $page-background-color;
 
   box-shadow: 0 0 30px black;
 
-  > .row {
-
-    > div {
-      height: $sticky-bar-height - $sticky-bar-border-size;
-    }
-  }
-
-  + header {
-     margin-top: $sticky-bar-height;
-  }
+  
 }
 
 a[id] h2 {
@@ -86,6 +90,7 @@ a[id] h2 {
 
 .links {
   position: relative;
+  text-align:center;
 
   .sub-nav {
     //pra grudar a lista de links na parte de baixo do cabecalho
@@ -104,10 +109,8 @@ a[id] h2 {
 
 .semcomp-logo {
   position: relative;
+  text-align:center;
   > img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
     margin: auto;
     max-height: $sticky-bar-height - $sticky-bar-border-size;
   }
