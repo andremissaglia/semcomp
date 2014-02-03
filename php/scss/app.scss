@@ -2,6 +2,8 @@
 //settings pra alterar os defaults do foundation
 $body-font-color: white;
 $header-font-color: white;
+$anchor-font-color: orange;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -15%);
 
 @import "foundation";
 
