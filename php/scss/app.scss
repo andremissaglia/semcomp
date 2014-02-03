@@ -6,17 +6,14 @@ $semcomp-color: #004F78;
 $page-background-color: #eee;
 $header-text-color: $semcomp-color;
 
+
 #logo-semcomp{
 	height:80px;
 	border:1px solid black;	
 }
-#all{
-	background: #ddd;
-	padding:0 15px;
-}
 h2 {
 	margin:0.7em 0;
-	border-bottom: 1px solid $semcomp-color;
+	//border-bottom: 1px solid $semcomp-color;
 	color: $semcomp-color;
 }
 .full-width-background {
@@ -85,7 +82,7 @@ a[id] h2 {
   margin-top: -$sticky-bar-height;
 
   color: $semcomp-color;
-  border-bottom: 1px solid $semcomp-color;
+  //border-bottom: 1px solid $semcomp-color;
 }
 
 .links {
@@ -128,3 +125,14 @@ a[id] h2 {
 	height: 50px;
 }
 
+.semcomp-img {
+	max-width: 90%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.article-background-1 { background-color: #0081C4; }
+.article-background-2 { background-color: #005785; }
+.article-background-3 { background-color: #002538; }
+.article-background-4 { background-color: #004F78; }
+.article-background-5 { background-color: #003E5E; }
