@@ -1,40 +1,45 @@
-@import "settings";
+//@import "settings";
+//settings pra alterar os defaults do foundation
+$body-font-color: white;
+$header-font-color: white;
+
 @import "foundation";
 
 $semcomp-color: #004F78;
 
 $page-background-color: #eee;
-$header-text-color: $semcomp-color;
-
 
 #logo-semcomp{
 	height:80px;
 	border:1px solid black;	
 }
+
 h2 {
 	margin:0.7em 0;
-	//border-bottom: 1px solid $semcomp-color;
-	color: $semcomp-color;
 }
+
 .full-width-background {
 	background: url('../images/faixaFundo.jpeg') repeat;	
 }
+
 #semcomp-logo2{
 	background: url('../images/logo2.png');
 	width:157px;
 	height:158px;
 	margin: 0 auto;
 }
+
 #header{
 	padding: 20px 10px;	
 }
+
 #header-text h1{
-	color: white;
 	font-size: 2.3rem;
 	text-align:center;
 	padding:0;
 	margin:0;
 }
+
 #header-text h1 strong{
 	font-size: 2.75rem;
 }
@@ -80,9 +85,6 @@ a[id] h2 {
   //truque pra fazer o link interno ficar na posicao certa
   padding-top: $sticky-bar-height;
   margin-top: -$sticky-bar-height;
-
-  color: $semcomp-color;
-  //border-bottom: 1px solid $semcomp-color;
 }
 
 .links {
@@ -136,3 +138,4 @@ a[id] h2 {
 .article-background-3 { background-color: #002538; }
 .article-background-4 { background-color: #004F78; }
 .article-background-5 { background-color: #003E5E; }
+
