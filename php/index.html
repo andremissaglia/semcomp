@@ -62,7 +62,7 @@
           <img class="semcomp-img" src="http://lorempixel.com/400/300/technics/?1">
         </div>
         <div class="large-6 columns">
-          <h2><span id="evento"></span>Uma semana inteira cheira de atividades em T.I.</h2>
+          <a id="evento"><h2>Uma semana inteira cheira de atividades em T.I.</h2></a>
           <p>Texto breve falando que a semcomp tem X pessoas, atividades a semana inteira</p>
         </div>
       </div>
@@ -70,7 +70,7 @@
     <article class="semcomp-background-2">
       <div class="row">
         <div class="large-12 columns text-center">
-          <h2><span id="minicursos"></span>Título dizendo que quem participou ganhou experiência nos minicursos</h2>
+          <a id="minicursos"><h2>Título dizendo que quem participou ganhou experiência nos minicursos</h2></a>
           <p>frase mais ou menos curta dizendo que teve vários minicursos sobre diferentes temas</p>
           <img class="semcomp-img" src="http://lorempixel.com/800/200/technics/?2">
         </div>
@@ -79,7 +79,7 @@
     <article class="semcomp-background-3">
       <div class="row">
         <div class="large-6 columns">
-          <h2><span id="palestras"></span>Título escrito que as palestras falaram de novidades em tecnologia</h2>
+          <a id="palestras"><h2>Título escrito que as palestras falaram de novidades em tecnologia</h2></a>
           <p>texto citando alguns exemplos</p>
         </div>
         <div class="large-6 columns text-center">
@@ -93,7 +93,7 @@
           <img class="semcomp-img" src="http://lorempixel.com/400/300/technics/?4">
         </div>
         <div class="large-6 columns">
-          <h2><span id="feira-recrutamento"></span>Título dizendo que puderam entrar em contato direto com grandes empresas</h2>
+          <a id="feira-recrutamento"><h2>Título dizendo que puderam entrar em contato direto com grandes empresas</h2></a>
           <p>não sei exatamente o que colocar aqui</p>
         </div>
       </div>
@@ -111,7 +111,7 @@
     <article class="semcomp-background-1">
       <div class="row">
         <div class="large-6 columns">
-          <h2><span id="competicoes"></span>Título falando que teve competições/sorteios e pessoas ganharam prêmios</h2>
+          <a id="competicoes"><h2>Título falando que teve competições/sorteios e pessoas ganharam prêmios</h2></a>
           <p>dar exemplos de concursos, links talvez. não sei se é bom ou não citar <em>quais</em> foram os prêmios</p>
         </div>
         <div class="large-6 columns text-center">
@@ -122,7 +122,7 @@
     <article class="semcomp-background-2">
       <div class="row">
         <div class="large-12 columns">
-          <h2><span id="patrocinio"></span>Quem foram nossos patrocinadores</h2>
+          <a id="patrocinio"><h2>Quem foram nossos patrocinadores</h2></a>
           <p>imagens dos logos dos patrocinadores aqui</p>
           <p>nota: não sei como fazer com os logos, porque eles geralmente tem fundo e/ou margem brancas. talvez deixar essas duas seções aqui com fundo branco e alterar o texto dela pra preto/algo escuro</p>
         </div>
@@ -131,7 +131,7 @@
     <article class="semcomp-background-3">
       <div class="row">
         <div class="large-12 columns">
-          <h2><span id="apoio""></span>Contamos com o apoio desses caras aí</h2>
+          <h2><span id="apoio"></span>Contamos com o apoio desses caras aí</h2>
           <p>mais logos</p>
         </div>
       </div>
@@ -142,13 +142,13 @@
         <div class="large-6 columns">
           <h2>Você que é entusiasta da tecnologia, mimimi gosta das parada</h2>
           <p>Quer saber das novidades da Semcomp? Entre com seu email no formulário abaixo e não se esqueça de nos seguir no <a href="https://facebook.com/semcomp17">Facebook</a>, <a href="https://twitter.com/semcomp">Twitter</a> e <a href="https://google.com/+semcomp">Google+</a>!</p>
-          <form>
+          <form method="POST" action="receber.php">
             <div class="row collapse">
               <div class="small-6 columns">
-                <input type="email" placeholder="Seu email aqui">
+                <input type="email" placeholder="Seu email aqui" id="email">
               </div>
               <div class="small-6 columns">
-                <input type="submit" class="button postfix" value="Quero receber notícias">
+                <input id="rec-noticias" type="submit" class="button postfix" value="Quero receber notícias">
               </div>
             </div>
           </form>
@@ -188,14 +188,6 @@
 
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
-
-    <script>
-      $(document).foundation({
-        magellan: {
-          threshold: 100
-        }
-      });
-    </script>
   </section>
 </body>
 </html>
