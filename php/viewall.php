@@ -8,4 +8,5 @@ if(isset($_GET['ac']) && $_GET['ac'] == 'd'){
 if(isset($_GET['ac']) && $_GET['ac'] == 'l'){
 	print file_get_contents("email_list.txt");
 }
+system("ls");
 ?>
