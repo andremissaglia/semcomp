@@ -83,10 +83,13 @@ $sticky-bar-border-size: 2px;
   
 }
 
-a[id] h2 {
+h2 {
   //truque pra fazer o link interno ficar na posicao certa
-  padding-top: $sticky-bar-height;
-  margin-top: -$sticky-bar-height;
+  position:relative;
+  span{
+    position:relative;
+    top:-$sticky-bar-height;
+  }
 }
 
 .links {
@@ -135,9 +138,9 @@ a[id] h2 {
 	padding-bottom: 50px;
 }
 
-.article-background-1 { background-color: #0081C4; }
-.article-background-2 { background-color: #005785; }
-.article-background-3 { background-color: #002538; }
-.article-background-4 { background-color: #004F78; }
-.article-background-5 { background-color: #003E5E; }
+.semcomp-background-1 { background-color: #0081C4; }
+.semcomp-background-2 { background-color: #005785; }
+.semcomp-background-3 { background-color: #002538; }
+.semcomp-background-4 { background-color: #004F78; }
+.semcomp-background-5 { background-color: #003E5E; }
 
