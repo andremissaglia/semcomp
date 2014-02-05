@@ -4,7 +4,7 @@ $body-font-color: white;
 $header-font-color: white;
 $anchor-font-color: orange;
 $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -15%);
-
+$form-label-font-color:scale-color(white, $lightness: -15%);
 @import "foundation";
 
 $semcomp-color: #004F78;
@@ -144,3 +144,7 @@ h2 {
 .semcomp-background-4 { background-color: #004F78; }
 .semcomp-background-5 { background-color: #003E5E; }
 
+/*Corrigindo bug do foundation */
+textarea[rows]{
+  height:auto;
+}

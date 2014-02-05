@@ -3715,7 +3715,7 @@ form .row textarea.columns {
 /* line 306, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
   font-size: 0.875rem;
-  color: #4d4d4d;
+  color: #d9d9d9;
   cursor: pointer;
   display: block;
   font-weight: normal;
@@ -3735,7 +3735,7 @@ label.inline {
 /* line 310, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label small {
   text-transform: capitalize;
-  color: #666666;
+  color: #f2f2f2;
 }
 
 /* line 316, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -7865,4 +7865,10 @@ h2 span {
 /* line 145, ../scss/app.scss */
 .semcomp-background-5 {
   background-color: #003E5E;
+}
+
+/*Corrigindo bug do foundation */
+/* line 148, ../scss/app.scss */
+textarea[rows] {
+  height: auto;
 }
