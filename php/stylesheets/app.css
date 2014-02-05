@@ -7866,3 +7866,20 @@ h2 span {
 .semcomp-background-5 {
   background-color: #003E5E;
 }
+
+/* line 147, ../scss/app.scss */
+.grid-logo {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+}
+/* line 152, ../scss/app.scss */
+.grid-logo li {
+  padding: 10px;
+}
+
+/* line 156, ../scss/app.scss */
+article > .row {
+  padding: 10px;
+}
