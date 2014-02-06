@@ -7866,3 +7866,32 @@ h2 span {
 .semcomp-background-5 {
   background-color: #003E5E;
 }
+
+/* line 147, ../scss/app.scss */
+.grid-logo {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+}
+/* line 152, ../scss/app.scss */
+.grid-logo li {
+  line-height: 100px;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 156, ../scss/app.scss */
+.grid-logo li a {
+  padding: 10px;
+  display: block;
+}
+/* line 161, ../scss/app.scss */
+.grid-logo li img {
+  max-height: 100px;
+}
+
+/* line 166, ../scss/app.scss */
+article > .row {
+  padding: 10px;
+}
