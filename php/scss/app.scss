@@ -153,11 +153,14 @@ h2 {
 		line-height: 100px;
 		height: 100px;
 		vertical-align: middle;
-
+    a{
+      padding:10px;
+      display:block;
+    }
 		text-align: center;
-		> img {
-			max-height: 100px;
-		}
+  		img {
+  			max-height: 100px;
+  		}
     }
 }
 article>.row{
