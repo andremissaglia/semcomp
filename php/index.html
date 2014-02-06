@@ -215,6 +215,14 @@
 
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
+    <script type="text/javascript">
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+      });
+    </script>
   </section>
 </body>
 </html>
