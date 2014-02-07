@@ -7866,3 +7866,22 @@ h2 span {
 .semcomp-background-5 {
   background-color: #003E5E;
 }
+
+/* line 147, ../scss/app.scss */
+.rodape {
+  background-color: #eeeeee;
+}
+/* line 149, ../scss/app.scss */
+.rodape h2 {
+  color: #004f78;
+}
+/* line 152, ../scss/app.scss */
+.rodape .organizacao {
+  height: 200px;
+}
+
+/* line 158, ../scss/app.scss */
+.semcomp-links li {
+  list-style-type: none;
+  color: #004f78;
+}
