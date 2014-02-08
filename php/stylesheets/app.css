@@ -7867,31 +7867,50 @@ h2 span {
   background-color: #003E5E;
 }
 
-/* line 147, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .grid-logo {
   background: white;
   border-radius: 20px;
   padding: 30px;
   margin: 10px;
 }
-/* line 152, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .grid-logo li {
   line-height: 100px;
   height: 100px;
   vertical-align: middle;
   text-align: center;
 }
-/* line 156, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .grid-logo li a {
   padding: 10px;
   display: block;
 }
-/* line 161, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 .grid-logo li img {
   max-height: 100px;
 }
 
-/* line 166, ../scss/app.scss */
+/* line 165, ../scss/app.scss */
 article > .row {
   padding: 10px;
+}
+
+/* line 168, ../scss/app.scss */
+.rodape {
+  background-color: #eeeeee;
+}
+/* line 170, ../scss/app.scss */
+.rodape h2 {
+  color: #004f78;
+}
+/* line 173, ../scss/app.scss */
+.rodape .organizacao {
+  height: 200px;
+}
+
+/* line 179, ../scss/app.scss */
+.semcomp-links li {
+  list-style-type: none;
+  color: #004f78;
 }
