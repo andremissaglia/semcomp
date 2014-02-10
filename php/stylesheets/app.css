@@ -4293,11 +4293,11 @@ label.error {
   text-decoration: none;
   font-size: 24px;
   font-weight: normal;
-  line-height: .5 !important;
+  line-height: 0.5 !important;
 }
 /* line 150, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
 .joyride-close-tip:hover, .joyride-close-tip:focus {
-  color: #eee !important;
+  color: #eeeeee !important;
 }
 
 /* line 153, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
@@ -4320,9 +4320,9 @@ label.error {
   position: absolute;
   border-radius: 3px;
   z-index: 102;
-  -moz-box-shadow: 0 0 30px #ffffff;
-  -webkit-box-shadow: 0 0 15px #ffffff;
-  box-shadow: 0 0 15px #ffffff;
+  -moz-box-shadow: 0 0 30px white;
+  -webkit-box-shadow: 0 0 15px white;
+  box-shadow: 0 0 15px white;
 }
 
 /* line 178, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
@@ -4540,7 +4540,7 @@ kbd {
   margin-top: -20px;
   margin-left: -20px;
   border: solid 3px;
-  border-color: #555 #fff;
+  border-color: #555555 white;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
   -webkit-animation-name: rotate;
@@ -4643,7 +4643,7 @@ kbd {
   right: 0;
   width: 11px;
   height: 14px;
-  border: solid 4px #fff;
+  border: solid 4px white;
   border-top: none;
   border-bottom: none;
 }
@@ -4655,11 +4655,11 @@ kbd {
   height: 14px;
   border: inset 8px;
   border-right-style: solid;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent white;
 }
 /* line 226, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-timer.paused > span.dark {
-  border-color: transparent transparent transparent #333;
+  border-color: transparent transparent transparent #333333;
 }
 /* line 235, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container:hover .orbit-timer > span {
@@ -5137,7 +5137,7 @@ ul.pagination li {
 @media print {
   /* line 162, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal {
-    background: #fff !important;
+    background: white !important;
   }
 }
 /* line 81, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
@@ -6251,7 +6251,7 @@ blockquote p {
   /* line 396, ../bower_components/foundation/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -6283,7 +6283,7 @@ blockquote p {
   /* line 415, ../bower_components/foundation/scss/foundation/components/_type.scss */
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
