@@ -5,6 +5,18 @@
   <title> Conheça a Semcomp </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Search -->
+  <meta name="Description" content="A Semana da Computação da USP São Carlos é um evento anual cujo principal objetivo é complementar a formação profissional e acadêmica dos alunos da USP e também de outras Universidades da região e conta com a participação direta de pelo menos 500 alunos.">
+
+  <!-- Facebook -->
+  <meta property="og:site_name" content="Semcomp 17"/>
+  <meta property="og:title" content="Semcomp 17"/>
+  <meta property="og:description" content="A Semana da Computação da USP São Carlos é um evento anual cujo principal objetivo é complementar a formação profissional e acadêmica dos alunos da USP e também de outras Universidades da região e conta com a participação direta de pelo menos 500 alunos."/>
+  <meta property="og:image" content="http://semcomp.icmc.usp.br/images/logo-semcomp-large.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://semcomp.icmc.usp.br"/>
+
+
   <link rel="stylesheet" href="stylesheets/app.css">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -34,9 +46,9 @@
           <li><a href="#evento">O evento</a></li>
           <li><a href="#minicursos">Minicursos</a></li>
           <li><a href="#palestras">Palestras</a></li>
-          <li><a href="#competicoes">Competições</a></li>
           <li><a href="#feira-recrutamento">Feira de Recrutamento</a></li>
           <li><a href="#wict">WICT</a></li>
+          <li><a href="#competicoes">Competições</a></li>
           <li><a href="#patrocinio">Patrocinio</a></li>
           <li><a href="#apoio">Apoio</a></li>
         </ul>
@@ -46,7 +58,7 @@
   <header class="full-width-background">
     <div id="header" class="row">
         <div class="large-3 large-push-9 columns">
-          <div id="semcomp-logo2"></div>
+          <img src="images/logo2.png" id="semcomp-logo2">
         </div>
         <div id="header-text" class="large-9 large-pull-3 columns">
           <h1>Saiba como foi a edição passada da </h1>
@@ -124,7 +136,23 @@
         <div class="large-12 columns">
           <h2><span id="patrocinio"></span>Quem foram nossos patrocinadores</h2>
           <p>imagens dos logos dos patrocinadores aqui</p>
-          <p>nota: não sei como fazer com os logos, porque eles geralmente tem fundo e/ou margem brancas. talvez deixar essas duas seções aqui com fundo branco e alterar o texto dela pra preto/algo escuro</p>
+          <div class="row grid-logo">
+            <ul class="small-block-grid-2 medium-block-grid-4 ">
+              <li><a href="http://www.advus.com/brasil/"><img src="images/patrocinio/advus.png"></a></li>
+              <li><a href="http://www.bettatecnologia.com.br/"><img src="images/patrocinio/betta.png"></a></li>
+              <li><a href="http://www.ciandt.com/br-pt/"><img src="images/patrocinio/cit.png"></a></li>
+              <li><a href="http://www.daitangroup.com/"><img src="images/patrocinio/daitan.png"></a></li>
+              <li><a href="http://www.e-deploy.com.br/"><img src="images/patrocinio/edeploy.png"></a></li>
+              <li><a href="http://www.eldorado.org.br/"><img src="images/patrocinio/eldorado.png"></a></li>
+              <li><a href="http://www.everis.com/brazil/"><img src="images/patrocinio/everis.png"></a></li>
+              <li><a href="http://www.icarotech.com/pt/"><img src="images/patrocinio/icaro.png"></a></li>
+              <li><a href="http://www.luz-ef.com/"><img src="images/patrocinio/luz.png"></a></li>
+              <li><a href="http://www.neolog.com.br/"><img src="images/patrocinio/neolog.png"></a></li>
+              <li><a href="http://www.prceu.usp.br/"><img src="images/patrocinio/prceu.png"></a></li>
+              <li><a href="http://www.touchtecnologia.com.br/"><img src="images/patrocinio/touch.png"></a></li>
+              <li><a href="http://www.viaconsulting.com.br/"><img src="images/patrocinio/viaconsulting.png"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </article>
@@ -132,7 +160,18 @@
       <div class="row">
         <div class="large-12 columns">
           <h2><span id="apoio"></span>Contamos com o apoio desses caras aí</h2>
-          <p>mais logos</p>
+          <div class="row grid-logo">
+            <ul class="small-block-grid-2 medium-block-grid-4 ">
+              <li><a href="http://www.4linux.com.br/"><img src="images/apoio/4linux.png"></a></li>
+              <li><a href="http://www.amd.com/br/"><img src="images/apoio/amd.png"></a></li>
+              <li><a href="http://www.autoseg.com/"><img src="images/apoio/autoseg.png"></a></li>
+              <li><a href="http://www.dextra.com.br/"><img src="images/apoio/dextra.png"></a></li>
+              <li><a href="http://estudiotrilha.com.br/"><img src="images/apoio/estudio_trilha.png"></a></li>
+              <li><a href="http://www.ibm.com/br/pt/"><img src="images/apoio/ibm.png"></a></li>
+              <li><a href="http://plataformatec.com.br/"><img src="images/apoio/plataformatec.png"></a></li>
+              <li><a href="http://www.inovacao.usp.br/"><img src="images/apoio/usp_inovacao.png"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </article>
@@ -180,34 +219,33 @@
       </div>
     </article>
 
-    <footer class="semcomp-background-5">
-      <div class="row">
-        <div class="large-4 columns">
-          <ul class="semcomp-links">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-          </ul>
+    <footer class="rodape">
+      <div class="row text-center">
+        <div class="medium-6 columns">
+          <h2>Realização</h2>
+          <img src="images/organizacao.png" class="organizacao"> 
         </div>
-        <div class="large-4 columns">
+        <div class="medium-6 columns">
+          <h2>Contato</h2>
           <ul class="semcomp-links">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
+            <li>Telefone 1: (16) 3373-9703</li>
+            <li>Telefone 2: (16) 3373-9686</li>
+            <li>E-mail: <a href="malito:semcomp@icmc.usp.br">semcomp@icmc.usp.br</a></li>
+            <li><a href="#">Formulário de Contato</a></li>
           </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="semcomp-links">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-          </ul>
-        </div>
-      </div>
+        </div>        
     </footer>
 
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
+    <script type="text/javascript">
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+      });
+    </script>
   </section>
 </body>
 </html>

@@ -4293,11 +4293,11 @@ label.error {
   text-decoration: none;
   font-size: 24px;
   font-weight: normal;
-  line-height: 0.5 !important;
+  line-height: .5 !important;
 }
 /* line 150, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
 .joyride-close-tip:hover, .joyride-close-tip:focus {
-  color: #eeeeee !important;
+  color: #eee !important;
 }
 
 /* line 153, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
@@ -4320,9 +4320,9 @@ label.error {
   position: absolute;
   border-radius: 3px;
   z-index: 102;
-  -moz-box-shadow: 0 0 30px white;
-  -webkit-box-shadow: 0 0 15px white;
-  box-shadow: 0 0 15px white;
+  -moz-box-shadow: 0 0 30px #ffffff;
+  -webkit-box-shadow: 0 0 15px #ffffff;
+  box-shadow: 0 0 15px #ffffff;
 }
 
 /* line 178, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
@@ -4540,7 +4540,7 @@ kbd {
   margin-top: -20px;
   margin-left: -20px;
   border: solid 3px;
-  border-color: #555555 white;
+  border-color: #555 #fff;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
   -webkit-animation-name: rotate;
@@ -4643,7 +4643,7 @@ kbd {
   right: 0;
   width: 11px;
   height: 14px;
-  border: solid 4px white;
+  border: solid 4px #fff;
   border-top: none;
   border-bottom: none;
 }
@@ -4655,11 +4655,11 @@ kbd {
   height: 14px;
   border: inset 8px;
   border-right-style: solid;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #fff;
 }
 /* line 226, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-timer.paused > span.dark {
-  border-color: transparent transparent transparent #333333;
+  border-color: transparent transparent transparent #333;
 }
 /* line 235, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container:hover .orbit-timer > span {
@@ -5137,7 +5137,7 @@ ul.pagination li {
 @media print {
   /* line 162, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal {
-    background: white !important;
+    background: #fff !important;
   }
 }
 /* line 81, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
@@ -6251,7 +6251,7 @@ blockquote p {
   /* line 396, ../bower_components/foundation/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -6283,7 +6283,7 @@ blockquote p {
   /* line 415, ../bower_components/foundation/scss/foundation/components/_type.scss */
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
@@ -7722,18 +7722,17 @@ h2 {
 
 /* line 27, ../scss/app.scss */
 #semcomp-logo2 {
-  background: url("../images/logo2.png");
   width: 157px;
   height: 158px;
   margin: 0 auto;
 }
 
-/* line 34, ../scss/app.scss */
+/* line 33, ../scss/app.scss */
 #header {
   padding: 20px 10px;
 }
 
-/* line 38, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 #header-text h1 {
   font-size: 2.3rem;
   text-align: center;
@@ -7741,25 +7740,25 @@ h2 {
   margin: 0;
 }
 
-/* line 45, ../scss/app.scss */
+/* line 44, ../scss/app.scss */
 #header-text h1 strong {
   font-size: 2.75rem;
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 50, ../scss/app.scss */
+  /* line 49, ../scss/app.scss */
   #header-text h1 {
     text-align: left;
   }
 }
-/* line 57, ../scss/app.scss */
+/* line 56, ../scss/app.scss */
 .sticky-top-bar {
   border-bottom: 2px solid #004f78;
   background-color: #eeeeee;
   box-shadow: 0 0 30px black;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 57, ../scss/app.scss */
+  /* line 56, ../scss/app.scss */
   .sticky-top-bar {
     position: fixed;
     top: 0;
@@ -7767,32 +7766,32 @@ h2 {
     z-index: 50;
     height: 82px;
   }
-  /* line 66, ../scss/app.scss */
+  /* line 65, ../scss/app.scss */
   .sticky-top-bar > .row > div {
     height: 80px;
   }
-  /* line 71, ../scss/app.scss */
+  /* line 70, ../scss/app.scss */
   .sticky-top-bar + header {
     margin-top: 82px;
   }
 }
 
-/* line 86, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 h2 {
   position: relative;
 }
-/* line 89, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 h2 span {
   position: relative;
   top: -82px;
 }
 
-/* line 95, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .links {
   position: relative;
   text-align: center;
 }
-/* line 99, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .links .sub-nav {
   position: absolute;
   bottom: 0;
@@ -7800,22 +7799,22 @@ h2 span {
   padding: 0;
   margin: 0;
 }
-/* line 108, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .links .sub-nav li {
   margin-bottom: 0;
 }
 
-/* line 114, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 .semcomp-logo {
   position: relative;
 }
-/* line 116, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .semcomp-logo > img {
   margin: auto;
   max-height: 80px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 116, ../scss/app.scss */
+  /* line 115, ../scss/app.scss */
   .semcomp-logo > img {
     position: absolute;
     top: 0;
@@ -7823,52 +7822,100 @@ h2 span {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 114, ../scss/app.scss */
+  /* line 113, ../scss/app.scss */
   .semcomp-logo {
     text-align: center;
   }
 }
 
-/* line 130, ../scss/app.scss */
+/* line 129, ../scss/app.scss */
 .social-links > a > img {
   width: 50px;
   height: 50px;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 .semcomp-img {
   max-width: 90%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 141, ../scss/app.scss */
+/* line 140, ../scss/app.scss */
 .semcomp-background-1 {
   background-color: #0081C4;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .semcomp-background-2 {
   background-color: #005785;
 }
 
-/* line 143, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .semcomp-background-3 {
   background-color: #002538;
 }
 
-/* line 144, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 .semcomp-background-4 {
   background-color: #004F78;
 }
 
-/* line 145, ../scss/app.scss */
+/* line 144, ../scss/app.scss */
 .semcomp-background-5 {
   background-color: #003E5E;
 }
 
+/* line 145, ../scss/app.scss */
+.grid-logo {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+}
+/* line 150, ../scss/app.scss */
+.grid-logo li {
+  line-height: 100px;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 154, ../scss/app.scss */
+.grid-logo li a {
+  padding: 10px;
+  display: block;
+}
+/* line 159, ../scss/app.scss */
+.grid-logo li img {
+  max-height: 100px;
+}
+
+/* line 164, ../scss/app.scss */
+article > .row {
+  padding: 10px;
+}
+
+/* line 167, ../scss/app.scss */
+.rodape {
+  background-color: #eeeeee;
+}
+/* line 169, ../scss/app.scss */
+.rodape h2 {
+  color: #004f78;
+}
+/* line 172, ../scss/app.scss */
+.rodape .organizacao {
+  height: 200px;
+}
+
 /*Corrigindo bug do foundation */
-/* line 148, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 textarea[rows] {
   height: auto;
+}
+
+/* line 183, ../scss/app.scss */
+.semcomp-links li {
+  list-style-type: none;
+  color: #004f78;
 }
