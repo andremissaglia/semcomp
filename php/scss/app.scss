@@ -177,5 +177,11 @@ article>.row{
 
 .semcomp-links li{
 	list-style-type:none;
-	color: $semcomp-color;
+	color: #000000;
+	a{
+		color: $semcomp-color;
+	}	
+	a:hover{
+		color: #6495ED;
+	}
 }
