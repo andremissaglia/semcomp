@@ -63,6 +63,10 @@ class Mandrill {
         $this->apikey = $apikey;
 
         $this->ch = curl_init();
+        
+        curl_setopt($this->ch, CURLOPT_SSL_VERIFYHOST, 0); // temporario para testar localhost
+        curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, 0); // temporario para testar localhost
+
         curl_setopt($this->ch, CURLOPT_USERAGENT, 'Mandrill-PHP/1.0.52');
         curl_setopt($this->ch, CURLOPT_POST, true);
         curl_setopt($this->ch, CURLOPT_FOLLOWLOCATION, true);
