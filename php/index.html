@@ -197,13 +197,13 @@
         <div class="medium-7 large-6 columns">
           <h2>Quer a sua marca aqui?</h2>
           <p>Ou então ficou curioso e quer saber mais? Estamos a disposição!</p>
-          <form>
+          <form target="_blank" action="./php/sendmail.php" method="post">
             <div class="row">
               <div class="large-6 columns">
-                <input type="text" placeholder="Seu nome" name="nome">
+                <input type="text" placeholder="Seu nome" name="nome" required>
               </div>
               <div class="large-6 columns">
-                <input type="email" placeholder="Seu email" name="email">
+                <input type="email" placeholder="Seu email" name="email" required>
               </div>
             </div>
             <div class="row">
