@@ -7908,16 +7908,26 @@ article > .row {
   height: 200px;
 }
 
-/* line 178, ../scss/app.scss */
+/* line 177, ../scss/app.scss */
+p {
+  text-align: justify;
+}
+
+/* line 180, ../scss/app.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 184, ../scss/app.scss */
 .semcomp-links li {
   list-style-type: none;
   color: #000000;
 }
-/* line 181, ../scss/app.scss */
+/* line 187, ../scss/app.scss */
 .semcomp-links li a {
   color: #004f78;
 }
-/* line 184, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .semcomp-links li a:hover {
   color: #6495ED;
 }
