@@ -7908,14 +7908,32 @@ article > .row {
   height: 200px;
 }
 
+/* line 177, ../scss/app.scss */
+p {
+  text-align: justify;
+}
+
+/* line 180, ../scss/app.scss */
+h2 {
+  text-align: center;
+}
+
 /*Corrigindo bug do foundation */
-/* line 179, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 textarea[rows] {
   height: auto;
 }
 
-/* line 183, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 .semcomp-links li {
   list-style-type: none;
+  color: #000000;
+}
+/* line 192, ../scss/app.scss */
+.semcomp-links li a {
   color: #004f78;
+}
+/* line 195, ../scss/app.scss */
+.semcomp-links li a:hover {
+  color: #6495ED;
 }
