@@ -1,17 +1,19 @@
 <meta charset='UTF-8'>
 <?php
+require_once 'vars.php';
 require_once 'Mandrill.php';
 try{
-	$mandrill = new Mandrill('eGYZod521ELozFAq31MivQ');
+	$mandrill = new Mandrill($API_KEY_MANDRILL);
 
     $message = array(
+    	'text' => "Contato Semcomp 17\nEnviado por: *|NOME|*\nE-mail: *|EMAIL|*\nMensagem:\n*|MENS|*",
     	'html' => "<html>
 					<head>
 						<meta charset='UTF-8'>
 					</head>
 					<body style='background-color: #eee; margin: 0px; padding: 0px;'>
 					<div style='padding: 15px;'>
-					<a href='http://semcomp.icmc.usp.br'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/logo-semcomp.png' height='100px'></a>
+					<a href='http://semcomp.icmc.usp.br'><img src='http://semcomp.icmc.usp.br/images/logo-semcomp.png' height='100px'></a>
 					</div>
 					<div style='font-family:  \"Open Sans\", \"Helvetica Neue\", \"Helvetica\", Helvetica, Arial, sans-serif; background-color: #fff; padding: 20px;'>
 					<h2>Contato Semcomp 17</h2>
@@ -22,9 +24,9 @@ try{
 					</div>
 					<div style='padding: 15px;'>
 						<div style='float:right;'>
-						<a href='https://facebook.com/semcomp17'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/facebook-72.png' height='50px'></a>
-						<a href='https://plus.google.com/103900653682189265366'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/google-plus-72.png' height='50px'></a>
-						<a href='https://twitter.com/semcomp'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/twitter-72.png' height='50px'></a>
+						<a href='https://facebook.com/semcomp17'><img src='http://semcomp.icmc.usp.br/images/facebook-72.png' height='50px'></a>
+						<a href='https://plus.google.com/103900653682189265366'><img src='http://semcomp.icmc.usp.br/images/google-plus-72.png' height='50px'></a>
+						<a href='https://twitter.com/semcomp'><img src='http://semcomp.icmc.usp.br/images/twitter-72.png' height='50px'></a>
 						</div>
 					</div>
 					</body>
@@ -55,16 +57,16 @@ try{
     	echo "<p>Não foi possível enviar sua mensagem, ocorreu um erro!</p><p>Envie um e-mail <a href=\"malito:semcomp@icmc.usp.br\">semcomp@icmc.usp.br</a> relatando o problema!</p>";
     	return;
     }
-// continuar a partir daqui
 
     $message = array(
+    	'text' => "Contato Semcomp 17\nOlá *|NOME|*, seu e-mail foi recebido por nós e iremos lhe responder assim que possível.",
     	'html' => "<html>
 <head>
 	<meta charset='UTF-8'>
 </head>
 <body style='font-family:  \"Open Sans\", \"Helvetica Neue\", \"Helvetica\", Helvetica, Arial, sans-serif; background-color: #eee; margin: 0px; padding: 0px;'>
 <div style='padding: 15px;'>
-<a href='http://semcomp.icmc.usp.br'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/logo-semcomp.png' height='100px'></a>
+<a href='http://semcomp.icmc.usp.br'><img src='http://semcomp.icmc.usp.br/images/logo-semcomp.png' height='100px'></a>
 </div>
 
 <div style='color: white; background-color: #003E5E; padding: 20px;'>
@@ -74,9 +76,9 @@ try{
 </div>
 <div style='padding: 15px;'>
 	<div style='float:right;'>
-	<a href='https://facebook.com/semcomp17'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/facebook-72.png' height='50px'></a>
-	<a href='https://plus.google.com/103900653682189265366'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/google-plus-72.png' height='50px'></a>
-	<a href='https://twitter.com/semcomp'><img src='https://dl.dropboxusercontent.com/u/41994681/Semcomp%20Modelo%20E-mail/images/twitter-72.png' height='50px'></a>
+	<a href='https://facebook.com/semcomp17'><img src='http://semcomp.icmc.usp.br/images/facebook-72.png' height='50px'></a>
+	<a href='https://plus.google.com/103900653682189265366'><img src='http://semcomp.icmc.usp.br/images/google-plus-72.png' height='50px'></a>
+	<a href='https://twitter.com/semcomp'><img src='http://semcomp.icmc.usp.br/images/twitter-72.png' height='50px'></a>
 	</div>
 	<div style='text-align: center; display: block; margin-left: auto; margin-right: auto; min-height: 50px; vertical-align: middle;'>
 		Enquanto isso fique por dentro das novidades da Semcomp 17 nas redes sociais.
