@@ -4,7 +4,7 @@ $body-font-color: white;
 $header-font-color: white;
 $anchor-font-color: orange;
 $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -15%);
-
+$form-label-font-color:scale-color(white, $lightness: -15%);
 @import "foundation";
 
 $semcomp-color: #004F78;
@@ -179,6 +179,11 @@ p {
 }
 h2 {
   text-align:center;
+}
+
+/*Corrigindo bug do foundation */
+textarea[rows]{
+  height:auto;
 }
 
 .semcomp-links li{

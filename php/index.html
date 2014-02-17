@@ -16,6 +16,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://semcomp.icmc.usp.br"/>
 
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />  
 
   <link rel="stylesheet" href="stylesheets/app.css">
   <script>
@@ -51,6 +52,7 @@
           <li><a href="#competicoes">Competições</a></li>
           <li><a href="#patrocinio">Patrocinio</a></li>
           <li><a href="#apoio">Apoio</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -183,23 +185,43 @@
 
     <article class="semcomp-background-4">
       <div class="row">
-        <div class="large-6 columns">
-          <h2>Pra você que é entusiasta da tecnologia</h2>
-          <p>Quer saber das novidades da Semcomp? Entre com seu email no formulário abaixo e não se esqueça de nos seguir no <a href="https://facebook.com/semcomp17">Facebook</a>, <a href="https://twitter.com/semcomp">Twitter</a> e <a href="https://google.com/+semcomp">Google+</a>!</p>
+        <div class="medium-5 large-6 columns">
+          <h2><span id="contato"></span>Você é entusiasta da tecnologia?</h2>
+          <p>Quer receber as novidades da Semcomp? Entre com seu email no formulário abaixo e não se esqueça de nos seguir nas redes sociais <a href="https://facebook.com/semcomp17">Facebook</a>, <a href="https://twitter.com/semcomp">Twitter</a> e <a href="https://google.com/+semcomp">Google+</a>!</p>
           <form action="http://usp.us3.list-manage.com/subscribe/post?u=0d96c43bf5338b7d7e4457f98&amp;id=7e367fd02b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="row collapse">
-              <div class="small-6 columns">
+              <div class="large-6 columns">
                 <input type="email" placeholder="Seu email aqui" name="EMAIL" id="mce-email">
               </div>
-              <div class="small-6 columns">
+              <div class="large-6 columns">
                 <input id="rec-noticias" type="submit" class="button postfix" value="Quero receber notícias">
               </div>
             </div>
           </form>
         </div>
-        <div class="large-6 columns">
+        <div class="medium-7 large-6 columns">
           <h2>Quer a sua marca aqui?</h2>
-          <p>Entre em <a href="#">contato</a>, somos legais!</p>
+          <p>Ou então ficou curioso e quer saber mais? Estamos a disposição!</p>
+          <form target="_blank" action="/php/sendmail.php" method="post">
+            <div class="row">
+              <div class="large-6 columns">
+                <input type="text" placeholder="Seu nome" name="nome" required>
+              </div>
+              <div class="large-6 columns">
+                <input type="email" placeholder="Seu email" name="email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <textarea placeholder="Mensagem..." name="mensagem" rows="3" required></textarea>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">                
+                <input type="submit" class="button expand" value="Enviar Mensagem">
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </article>
