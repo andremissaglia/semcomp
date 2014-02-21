@@ -59,7 +59,7 @@ try{
     }
 
     $message = array(
-    	'text' => "Contato Semcomp 17\nOlá *|NOME|*, seu e-mail foi recebido por nós e iremos lhe responder assim que possível.",
+    	'text' => "Contato Semcomp 17\nOlá *|NOME|*, seu e-mail foi recebido e iremos respondê-lo assim que possível.\n\nEnquanto isso, fique por dentro das novidades da Semcomp 17 nas redes sociais:\n\nhttp://facebook.com/semcomp17\nhttp://twitter.com/semcomp\nhttp://google.com/+semcomp",
     	'html' => "<html>
 <head>
 	<meta charset='UTF-8'>
@@ -72,7 +72,7 @@ try{
 <div style='color: white; background-color: #003E5E; padding: 20px;'>
 
 <h2>Contato Semcomp 17</h2>
-<p>Olá *|NOME|*, seu e-mail foi recebido por nós e iremos lhe responder assim que possível.</p>
+<p>Olá *|NOME|*, seu e-mail foi recebido iremos respondê-lo assim que possível.</p>
 </div>
 <div style='padding: 15px;'>
 	<div style='float:right;'>
