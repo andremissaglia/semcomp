@@ -9,9 +9,11 @@ $("#form_contato").on("submit", function (e) {
     }
 
     var form = $(this);
-    var inputs = form.find("input, textarea");
+    //var inputs = form.find("input, textarea");
     var serializedData = form.serialize();
-    inputs.prop("disabled",true);
+    form.hide();
+    $('#enviando_contato').text("Enviando mensagem...");
+    //inputs.prop("disabled",true);
 
     $.ajax({
         url: "./php/sendmail.php",
@@ -25,7 +27,9 @@ $("#form_contato").on("submit", function (e) {
         },
         complete: function(jqXHR, textStatus){
             $('#formContatoModal').foundation('reveal', 'open');
-            inputs.prop("disabled",false);
+            //inputs.prop("disabled",false);
+            form.show();
+            $('#enviando_contato').text("");
         }
     });
 
