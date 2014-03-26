@@ -16,6 +16,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://semcomp.icmc.usp.br"/>
 
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />  
 
   <link rel="stylesheet" href="stylesheets/app.css">
   <script>
@@ -46,14 +47,15 @@
           </div>
         </div>
         <ul class="sub-nav show-for-large-up">
-          <li><a href="#evento">O evento</a></li>
-          <li><a href="#minicursos">Minicursos</a></li>
-          <li><a href="#palestras">Palestras</a></li>
-          <li><a href="#feira-recrutamento">Feira de Recrutamento</a></li>
-          <li><a href="#wict">WICT</a></li>
-          <li><a href="#competicoes">Competições</a></li>
-          <li><a href="#patrocinio">Patrocinio</a></li>
-          <li><a href="#apoio">Apoio</a></li>
+          <li><a class="semcomp-menu" href="#evento">O evento</a></li>
+          <li><a class="semcomp-menu" href="#minicursos">Minicursos</a></li>
+          <li><a class="semcomp-menu" href="#palestras">Palestras</a></li>
+          <li><a class="semcomp-menu" href="#feira-recrutamento">Feira de Recrutamento</a></li>
+          <li><a class="semcomp-menu" href="#wict">WICT</a></li>
+          <li><a class="semcomp-menu" href="#competicoes">Competições</a></li>
+          <li><a class="semcomp-menu" href="#patrocinio">Patrocinio</a></li>
+          <li><a class="semcomp-menu" href="#apoio">Apoio</a></li>
+          <li><a class="semcomp-menu" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -110,12 +112,12 @@
     </article>
     <article class="semcomp-background-4">
       <div class="row">
-        <div class="large-6 columns text-center">
-          <img class="semcomp-img" src="fotos/feira.jpg">
-        </div>
-        <div class="large-6 columns">
+        <div class="large-6 large-push-6 columns">
           <h2><span id="feira-recrutamento"></span>Contato direto com empresas</h2>
           <p>Ano passado aconteceu a 4ª Feira de Recrutamento, um evento que tem como objetivo aproximar os alunos do mercado de trabalho. Ao todo 12 empresas tiveram contato direto com os participantes: durante conversas nos estandes, durante palestras empresariais e durante os diversos processos seletivos aplicados dentro do campus da USP São Carlos.</p>
+        </div>
+        <div class="large-6 large-pull-6 columns text-center">
+          <img class="semcomp-img" src="fotos/feira.jpg">
         </div>
       </div>
     </article>
@@ -186,23 +188,44 @@
 
     <article class="semcomp-background-4">
       <div class="row">
-        <div class="large-6 columns">
-          <h2>Pra você que é entusiasta da tecnologia</h2>
-          <p>Quer saber das novidades da Semcomp? Entre com seu email no formulário abaixo e não se esqueça de nos seguir no <a href="https://facebook.com/semcomp17">Facebook</a>, <a href="https://twitter.com/semcomp">Twitter</a> e <a href="https://google.com/+semcomp">Google+</a>!</p>
+        <div class="medium-5 large-6 columns">
+          <h2><span id="contato"></span>Você é entusiasta da tecnologia?</h2>
+          <p>Quer receber as novidades da Semcomp? Entre com seu email no formulário abaixo e não se esqueça de nos seguir no <a href="https://facebook.com/semcomp17">Facebook</a>, <a href="https://twitter.com/semcomp">Twitter</a> e <a href="https://google.com/+semcomp">Google+</a>!</p>
           <form action="http://usp.us3.list-manage.com/subscribe/post?u=0d96c43bf5338b7d7e4457f98&amp;id=7e367fd02b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="row collapse">
-              <div class="small-6 columns">
+              <div class="large-6 columns">
                 <input type="email" placeholder="Seu email aqui" name="EMAIL" id="mce-email">
               </div>
-              <div class="small-6 columns">
+              <div class="large-6 columns">
                 <input id="rec-noticias" type="submit" class="button postfix" value="Quero receber notícias">
               </div>
             </div>
           </form>
         </div>
-        <div class="large-6 columns">
+        <div class="medium-7 large-6 columns">
           <h2>Quer a sua marca aqui?</h2>
-          <p>Entre em <a href="#">contato</a>, somos legais!</p>
+          <p>Ou então ficou curioso e quer saber mais? Estamos a disposição!</p>
+          <form id="form_contato" target="_blank" action="./php/sendmail.php" method="post">
+            <div class="row">
+              <div class="large-6 columns">
+                <input type="text" placeholder="Seu nome" name="nome" required>
+              </div>
+              <div class="large-6 columns">
+                <input type="email" placeholder="Seu email" name="email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <textarea placeholder="Mensagem..." name="mensagem" rows="3" required></textarea>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">                
+                <input type="submit" class="button expand" value="Enviar Mensagem">
+              </div>
+            </div>
+          </form>
+          <p id="enviando_contato"></p>
         </div>
       </div>
     </article>
@@ -219,21 +242,30 @@
             <li>Telefone 1: (16) 3373-9703</li>
             <li>Telefone 2: (16) 3373-9686</li>
             <li>E-mail: <a href="malito:semcomp@icmc.usp.br">semcomp@icmc.usp.br</a></li>
-            <li><a href="#">Formulário de Contato</a></li>
           </ul>
-        </div>        
+        </div>      
     </footer>
+
+  <div id="formContatoModal" style="color: black;" class="reveal-modal modalStyle" data-reveal>
+      <h2 style="color: black;">Contato Semcomp 17.</h2>
+      <p id="respostaFormContato" class="lead"></p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
 
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script type="text/javascript">
-      $('a').click(function(){
+      $('a.semcomp-menu').click(function(){
           $('html, body').animate({
               scrollTop: $( $.attr(this, 'href') ).offset().top
           }, 500);
           return false;
       });
     </script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/send-email.js"></script>
   </section>
+
 </body>
 </html>

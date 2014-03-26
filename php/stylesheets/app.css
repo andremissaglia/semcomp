@@ -3715,7 +3715,7 @@ form .row textarea.columns {
 /* line 306, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
   font-size: 0.875rem;
-  color: #4d4d4d;
+  color: #d9d9d9;
   cursor: pointer;
   display: block;
   font-weight: normal;
@@ -3735,7 +3735,7 @@ label.inline {
 /* line 310, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label small {
   text-transform: capitalize;
-  color: #666666;
+  color: #f2f2f2;
 }
 
 /* line 316, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -7923,16 +7923,22 @@ h2 {
   text-align: center;
 }
 
-/* line 188, ../scss/app.scss */
+/*Corrigindo bug do foundation */
+/* line 189, ../scss/app.scss */
+textarea[rows] {
+  height: auto;
+}
+
+/* line 193, ../scss/app.scss */
 .semcomp-links li {
   list-style-type: none;
   color: #000000;
 }
-/* line 191, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 .semcomp-links li a {
   color: #004f78;
 }
-/* line 194, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .semcomp-links li a:hover {
   color: #6495ED;
 }
