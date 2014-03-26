@@ -108,9 +108,13 @@ h2 {
       margin-bottom: 0;
     }
   }
-  #data h3{
+  #data {
     color:black;
-    padding:5px;
+    h3{
+      color:black;
+      padding-bottom:0;
+      margin-bottom:0;
+    }
   }
 }
 

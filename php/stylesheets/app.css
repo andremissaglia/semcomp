@@ -7804,22 +7804,27 @@ h2 span {
   margin-bottom: 0;
 }
 /* line 111, ../scss/app.scss */
+.links #data {
+  color: black;
+}
+/* line 113, ../scss/app.scss */
 .links #data h3 {
   color: black;
-  padding: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* line 117, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .semcomp-logo {
   position: relative;
 }
-/* line 119, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
 .semcomp-logo > img {
   margin: auto;
   max-height: 80px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 119, ../scss/app.scss */
+  /* line 123, ../scss/app.scss */
   .semcomp-logo > img {
     position: absolute;
     top: 0;
@@ -7827,118 +7832,118 @@ h2 span {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 117, ../scss/app.scss */
+  /* line 121, ../scss/app.scss */
   .semcomp-logo {
     text-align: center;
   }
 }
 
-/* line 133, ../scss/app.scss */
+/* line 137, ../scss/app.scss */
 .social-links > a > img {
   width: 50px;
   height: 50px;
 }
 
-/* line 138, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .semcomp-img {
   max-width: 90%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 144, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .semcomp-background-1 {
   background-color: #0081C4;
 }
 
-/* line 145, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 .semcomp-background-2 {
   background-color: #005785;
 }
 
-/* line 146, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
 .semcomp-background-3 {
   background-color: #002538;
 }
 
-/* line 147, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .semcomp-background-4 {
   background-color: #004F78;
 }
 
-/* line 148, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .semcomp-background-5 {
   background-color: #003E5E;
 }
 
-/* line 149, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .grid-logo {
   background: white;
   border-radius: 20px;
   padding: 30px;
   margin: 10px;
 }
-/* line 154, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .grid-logo li {
   line-height: 100px;
   height: 100px;
   vertical-align: middle;
   text-align: center;
 }
-/* line 158, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .grid-logo li a {
   padding: 10px;
   display: block;
 }
-/* line 163, ../scss/app.scss */
+/* line 167, ../scss/app.scss */
 .grid-logo li img {
   max-height: 100px;
 }
 
-/* line 168, ../scss/app.scss */
+/* line 172, ../scss/app.scss */
 article > .row {
   padding: 10px;
 }
 
-/* line 171, ../scss/app.scss */
+/* line 175, ../scss/app.scss */
 .rodape {
   background-color: #eeeeee;
 }
-/* line 173, ../scss/app.scss */
+/* line 177, ../scss/app.scss */
 .rodape h2 {
   color: #004f78;
 }
-/* line 176, ../scss/app.scss */
+/* line 180, ../scss/app.scss */
 .rodape .organizacao {
   height: 200px;
 }
 
-/* line 181, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 p {
   text-align: justify;
 }
 
-/* line 184, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 h2 {
   text-align: center;
 }
 
 /*Corrigindo bug do foundation */
-/* line 189, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 textarea[rows] {
   height: auto;
 }
 
-/* line 193, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .semcomp-links li {
   list-style-type: none;
   color: #000000;
 }
-/* line 196, ../scss/app.scss */
+/* line 200, ../scss/app.scss */
 .semcomp-links li a {
   color: #004f78;
 }
-/* line 199, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .semcomp-links li a:hover {
   color: #6495ED;
 }
